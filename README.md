@@ -19,26 +19,26 @@ Work in pairs to simulate a real ML engineering workflow:
 
 - Clone the repo (do **NOT** run `git init`):
 
-```bash
-git clone <repo-url>
-cd <repo>
-```
+  ```bash
+  git clone <repo-url>
+  cd <repo>
+  ```
 
 * Create a branch for your work:
 
-```bash
-git checkout -b branch-name
-```
+  ```bash
+  git checkout -b branch-name
+  ```
 
 * Add your code (all files necessary for the project)
 
 * Commit and push **your branch only**:
 
-```bash
-git add .
-git commit -m "Add setup files"
-git push -u origin branch-name
-```
+  ```bash
+  git add .
+  git commit -m "Add setup files"
+  git push -u origin branch-name
+  ```
 
 * Open a Pull Request → from your branch into `main`
 
@@ -47,16 +47,16 @@ git push -u origin branch-name
 * Review the PR and merge it
 * Clone the repo:
 
-```bash
-git clone <repo-url>
-cd <repo>
-```
+  ```bash
+  git clone <repo-url>
+  cd <repo>
+  ```
 
 * Pull the latest code from `main`:
 
-```bash
-git pull origin main
-```
+  ```bash
+  git pull origin main
+  ```
 
 * Run the project code and test it (if it’s a notebook, you just open it in Jupyter/VS Code and run it)
 
@@ -109,24 +109,24 @@ Before writing code, the Developer should now **create a Conda virtual environme
 
 * In **VS Code terminal** (bash):
 
-```bash
-conda create -n project-env python=3.11 -y
-conda activate project-env
-```
+  ```bash
+  conda create -n project-env python=3.11 -y
+  conda activate project-env
+  ```
 
 * Install the libraries you need (example):
 
-```bash
-conda install pandas requests -y
-```
+  ```bash
+  conda install pandas requests -y
+  ```
 
 * Work on your code normally
 
 * Then export your environment to share it:
 
-```bash
-conda env export --from-history > environment.yml
-```
+  ```bash
+  conda env export --from-history > environment.yml
+  ```
 
 * Commit and push `environment.yml` as part of your **Pull Request**.
 
@@ -138,15 +138,15 @@ After merging the PR, before testing the code:
 
 * Recreate the environment using the Developer’s environment file:
 
-```bash
-conda env create -f environment.yml -n project-env
-```
+  ```bash
+  conda env create -f environment.yml -n project-env
+  ```
 
 * Activate it:
 
-```bash
-conda activate project-env
-```
+  ```bash
+  conda activate project-env
+  ```
 
 * Run the project (script or notebook).
 
