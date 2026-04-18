@@ -22,7 +22,6 @@ dependencies:
   - conda-package-handling
   - conda-package-streaming
   - anaconda-auth
-  - python.app
   - anaconda-toolbox
   - tensorflow
   - scikit-learn
